@@ -6,7 +6,12 @@
 
     <bean class="com.spring.BeanDemo">
 <!--    initializing the data member via property tag-->
-    <property name="id" value="101"/>
-    <property name="name" value="mr.bean"/>
+<!--    <property name="id" value="101"/>-->
+<!--    <property name="name" value="mr.bean"/>-->
+
+<!--        initializing the data member via constructor-->
+        <constructor-arg value="101"/>
+        <constructor-arg value="Mr.bearn "/>
+
     </bean>
 </beans>
