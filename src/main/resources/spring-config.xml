@@ -4,7 +4,9 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean class="com.spring.BeanDemo"/>
-
-
+    <bean class="com.spring.BeanDemo">
+<!--    initializing the data member via property tag-->
+    <property name="id" value="101"/>
+    <property name="name" value="mr.bean"/>
+    </bean>
 </beans>

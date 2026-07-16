@@ -20,10 +20,9 @@ public class App
             ApplicationContext container = new ClassPathXmlApplicationContext("spring-config.xml");
     // it will create bean object for beandemo.class
             BeanDemo bean =  container.getBean(BeanDemo.class);
+            // this time the spring will create the object and initialize the value
+            System.out.println(bean.getId()+" "+bean.getName());
             bean.add(4,5);
-
-            BeanDemo d = new BeanDemo();
-            d.add(4,5);
 
 
 
