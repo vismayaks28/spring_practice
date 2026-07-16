@@ -14,4 +14,11 @@
         <constructor-arg value="Mr.bearn "/>
 
     </bean>
+
+
+    <bean class="com.spring.DBConnection">
+    <constructor-arg value="MySQL"/>
+    <constructor-arg value="root"/>
+        <constructor-arg value="root"/>
+    </bean>
 </beans>
